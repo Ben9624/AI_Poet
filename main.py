@@ -1,25 +1,16 @@
-import sys
-print("PYTHON VERSION:", sys.version)
-try:
-    from dotenv import load_dotenv
-    print("✅ dotenv import 성공")
-except ModuleNotFoundError:
-    print("❌ dotenv import 실패")
-
 #pip install python-dotenv
 #pip install langchain-openai
 #pip install streamlit
 
-from dotenv import load_dotenv
-load_dotenv()
+# from dotenv import load_dotenv
+# load_dotenv()
 
 from langchain_openai import ChatOpenAI
-import os
 chat_model = ChatOpenAI()
 
-#subject = "AI"
-#result = chat_model.invoke(subject + "에 대한 시를 써줘.")
-#print(result.content)
+# subject = "AI"
+# result = chat_model.invoke(subject + "에 대한 시를 써줘.")
+# print(result.content)
 
 import streamlit as st
 
